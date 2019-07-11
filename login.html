@@ -28,11 +28,13 @@
         </ol>
     </section>
     <form action="list_manager.html">
-        <div>User Name:</div>
-        <div><input type="text" /></div>
-        <div>Password:</div>
-        <div><input type="password" /></div>
-        <div><input type="checkbox"> Remember me</div>
+        <label for="username">User Name:</label><br>
+        <input type="text" id="username" name="username" autofocus="autofocus" />
+        <br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" />
+        <br>
+        <input type="checkbox" id="checkbox" name="checkbox">Remember me
         <div>
             <a href="index.html">Cancel</a>
             <button type="submit">Submit</button>
@@ -41,7 +43,7 @@
     <aside>
         <h4>Don't have an account yet?</h4>
         <p>An account is required to use this site so we are able to differentiate user data.</p>
-        <a href="">Register</a>
+        <a href="register.html">Register</a>
     </aside>
     <footer>
         <hr />
