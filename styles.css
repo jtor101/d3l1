@@ -1,0 +1,79 @@
+body {
+    width: 100%;
+    background-color: black;
+}
+
+.wrapper {
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    height: 100%;
+}
+
+a:hover {
+    text-decoration: overline;
+}
+
+header {
+    padding-left: 15px;
+    font-size: 1.2em;
+}
+
+nav {
+    width: 70%;
+}
+
+nav ul li {
+    display: inline-block;
+    width: 25%;
+}
+
+nav a:hover {
+    text-decoration: overline;
+    color: blue;
+}
+
+section h1 {
+    font-size: 1.5em;
+    padding-left: 15px;
+}
+
+section h2 {
+    font-size: 1.3em;
+    padding-left: 15px;
+}
+
+article {
+    font-size: 1.1em;
+    padding-left: 15px;
+}
+
+form {
+    padding-left: 15px;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    img {
+        display: none;
+    }
+    p {
+        font-size: 0.8em;
+        padding: 5px;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (max-width: 800px) {
+    .largelogo {
+        display: none;
+    }
+    p {
+        font-size: 0.8em;
+        padding: 5px;
+    }
+}
