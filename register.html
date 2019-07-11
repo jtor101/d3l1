@@ -29,21 +29,23 @@
     </section>
     <aside>
         <form action="#">
-            <div>User Name:</div>
-            <div><input type="text" /></div>
-            <div>Password:</div>
-            <div><input type="password" /></div>
-            <div>Confirm:</div>
-            <div><input type="password" /></div>
-            <div>Email Address:</div>
-            <div><input type="email" /></div>
-            <div>
-                <h4>How did you hear about us?</h4>
-                <br /><input type="radio">Friend
-                <br /><input type="radio">Internet Search
-                <br /><input type="radio">Other
-            </div>
-            <div><input type="text" /></div>
+            <label for="username">User Name:</label><br>
+            <input type="text" id="username" name="username" autofocus="autofocus" />
+            <br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" />
+            <br>
+            <label for="confirm">Confirm:</label><br>
+            <input type="password" id="confirm" name="confirm" />
+            <br>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" /></div>
+            <br>
+            <h4>How did you hear about us?</h4>
+            <br /><input type="radio">Friend
+            <br /><input type="radio">Internet Search
+            <br /><input type="radio">Other
+            <br><input type="text" id="referral" name="referral" />
             <div>
                 <a href="index.html">Cancel</a>
                 <button type="submit">Submit</button>
