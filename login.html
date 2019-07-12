@@ -1,57 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="img/favicon.ico" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    <title>list IT - Login</title>
+    <title>List IT Home
+    </title>
 </head>
 
 <body>
-    <main class="wrapper">
-        <header><a href="index.html">list IT</a></header>
-        <nav>
-            <ul>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="register.html">Register</a></li>
-            </ul>
+    <div class="container-fluid">
+
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-md bg-dark">
+
+            <!-- Navbar brand -->
+            <a class="navbar-item text-white" href="index.html">List IT</a>
+
+            <!-- Collapse button -->
+            <button class="btn btn-white navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
+              class="fas fa-bars-white"></i></span></button>
+
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+
+                <!-- Links -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="register.html">Register</a>
+                    </li>
+                </ul>
+                <!-- Links -->
+
+            </div>
+            <!-- Collapsible content -->
+
         </nav>
-        <section>
+        <!--/.Navbar-->
+
+
+        <section class="jumbotron">
             <h1>list IT</h1>
             <h2>lists made easy <img src="img/logo.png" alt="logo" /></h2>
         </section>
-        <section>
-            <h2>Login</h2>
-            <ol>
-                <li><a href="index.html">Home</a></li>
-                <li>Login</li>
-                <li><a href="register.html">Register</a></li>
-            </ol>
-        </section>
-        <form action="list_manager.html">
-            <label for="username">User Name:</label><br>
-            <input type="text" id="username" name="username" autofocus="autofocus" />
-            <br>
-            <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password" />
-            <br>
-            <input type="checkbox" id="checkbox" name="checkbox">Remember me
-            <div>
-                <a href="index.html">Cancel</a>
-                <button type="submit">Submit</button>
+        <div class="row justify-content-center">
+            <div class="col-xl-10 col-lg-10 col-med-10 col-12">
+
+                <h2>Login</h2>
+
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb bg-white">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Login</li>
+                    </ol>
+                </nav>
+                </nav>
+
+
+                <form action="list_manager.html">
+                    <div class="form-group row">
+                        <label for="colFormLabel" class="col-sm-2 col-form-label">User Name: </label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="colFormLabel" placeholder="User Name">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="colFormLabel" class="col-sm-2 col-form-label">Password: </label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="colFormLabel" placeholder="Password">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group row">
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                <label class="form-check-label" for="gridCheck1">
+                                  Remember me
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mr-auto">
+                        <a class="btn btn-secondary" href="index.html" role="button">Cancel</a>
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                    </div>
+                </form>
+                <aside>
+                    <h4>Don't have an account yet?</h4>
+                    <p>An account is required to use this site so we are able to differentiate user data.</p>
+                    <a href="register.html">Register</a>
+                </aside>
+                <footer class="text-sm-right text-right">
+                    <hr />
+                    <p>&copy; list IT 2019</p>
+                </footer>
             </div>
-        </form>
-        <aside>
-            <h4>Don't have an account yet?</h4>
-            <p>An account is required to use this site so we are able to differentiate user data.</p>
-            <a href="register.html">Register</a>
-        </aside>
-        <footer>
-            <hr />
-            <p>&copy; list IT 2019</p>
-        </footer>
-    </main>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first,
+    then Popper.js,
+    then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
