@@ -1,51 +1,42 @@
-body {
-    width: 100%;
+/* nav {
     background-color: black;
+    width: 100%;
 }
 
-.wrapper {
-    width: 80%;
-    margin: auto;
-    background-color: white;
-    height: 100%;
+nav a {
+    color: white;
+} */
+
+nav button {
+    color: white;
 }
 
-a:hover {
-    text-decoration: overline;
-}
-
-header {
-    padding-left: 15px;
-    font-size: 1.2em;
-}
-
-nav {
-    width: 70%;
-}
-
-nav ul li {
-    display: inline-block;
-    width: 25%;
-}
-
-nav a:hover {
-    text-decoration: overline;
-    color: blue;
+section {
+    text-align: center;
 }
 
 section h1 {
-    font-size: 1.5em;
-    padding-left: 15px;
+    position: relative;
+    bottom: 50px;
+    font-size: 3.5em;
 }
 
 section h2 {
-    font-size: 1.3em;
-    padding-left: 15px;
+    font-style: italic;
 }
 
 article {
-    font-size: 1.1em;
-    padding-left: 15px;
+    margin: 0 auto;
+}
+
+article img {
+    position: relative;
+    left: 150px;
+}
+
+article a {
+    clear: right;
+    float: right;
 }
 
 form {
@@ -55,7 +46,19 @@ form {
 
 /* Extra small devices (phones, 600px and down) */
 
+@media only screen and (max-width: 575px) {
+    section h1,
+    section h2 {
+        position: relative;
+        top: 1px;
+    }
+}
+
 @media only screen and (max-width: 600px) {
+    section,
+    article {
+        width: 100%;
+    }
     img {
         display: none;
     }
@@ -68,7 +71,7 @@ form {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 975px) {
     .largelogo {
         display: none;
     }
